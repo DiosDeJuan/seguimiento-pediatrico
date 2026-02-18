@@ -68,7 +68,9 @@ function formatearFecha(fecha) {
     if (!fecha) return '-';
     
     try {
-        const date = new Date(fecha + 'T00:00:00'); // Evitar problemas de zona horaria
+        // Parse as local date to avoid timezone shifts
+        const [year, month, day] = fecha.split('-');
+        const date = new Date(year, month - 1, day);
         const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
         return date.toLocaleDateString('es-MX', opciones);
     } catch (e) {

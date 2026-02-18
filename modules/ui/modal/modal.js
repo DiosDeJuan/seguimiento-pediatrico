@@ -12,7 +12,7 @@ let isModalOpen = false;
  */
 export function initModal() {
     const overlay = document.getElementById('modalOverlay');
-    const container = document.getElementById('modalContainer');
+    const container = document.getElementById('modalDialog');
     const closeBtn = document.getElementById('modalClose');
     const btnEntendido = document.getElementById('modalBtnEntendido');
     
@@ -54,7 +54,7 @@ export function initModal() {
  */
 export function mostrarModal(titulo, mensaje, lista = null) {
     const overlay = document.getElementById('modalOverlay');
-    const container = document.getElementById('modalContainer');
+    const container = document.getElementById('modalDialog');
     const tituloEl = document.getElementById('modalTitulo');
     const mensajeEl = document.getElementById('modalMensaje');
     const listaEl = document.getElementById('modalLista');
@@ -89,7 +89,7 @@ export function mostrarModal(titulo, mensaje, lista = null) {
  */
 export function cerrarModal() {
     const overlay = document.getElementById('modalOverlay');
-    const container = document.getElementById('modalContainer');
+    const container = document.getElementById('modalDialog');
     
     if (overlay) overlay.classList.remove('active');
     if (container) container.classList.remove('active');

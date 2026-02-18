@@ -141,7 +141,11 @@ function eliminarMedicamento(id) {
 function moverMedicamentoArriba(id) {
     const index = medicamentos.findIndex(m => m.id === id);
     if (index > 0) {
-        [medicamentos[index - 1], medicamentos[index]] = [medicamentos[index], medicamentos[index - 1]];
+        // Swap with previous item
+        const temp = medicamentos[index - 1];
+        medicamentos[index - 1] = medicamentos[index];
+        medicamentos[index] = temp;
+        
         renderMedicamentos();
         
         // Notificar cambio
@@ -156,7 +160,11 @@ function moverMedicamentoArriba(id) {
 function moverMedicamentoAbajo(id) {
     const index = medicamentos.findIndex(m => m.id === id);
     if (index < medicamentos.length - 1) {
-        [medicamentos[index], medicamentos[index + 1]] = [medicamentos[index + 1], medicamentos[index]];
+        // Swap with next item
+        const temp = medicamentos[index + 1];
+        medicamentos[index + 1] = medicamentos[index];
+        medicamentos[index] = temp;
+        
         renderMedicamentos();
         
         // Notificar cambio
