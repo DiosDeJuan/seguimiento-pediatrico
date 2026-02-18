@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento Pediátrico - Editor Clínico</title>
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- CDN Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <!-- Header con botón de opciones -->
+    <header class="app-header">
+        <h1>Seguimiento Pediátrico</h1>
+        <button id="btnToggleDrawer" class="btn-drawer">⚙️ Opciones</button>
+    </header>
+
+    <!-- Layout principal: 2 paneles -->
+    <div class="app-container">
+        <!-- Panel izquierdo: Formulario -->
+        <div class="panel-formulario" id="panelFormulario">
+            <!-- Contenido cargado dinámicamente -->
+        </div>
+
+        <!-- Panel derecho: Preview WYSIWYG -->
+        <div class="panel-receta" id="panelReceta">
+            <!-- Contenido cargado dinámicamente -->
+        </div>
+    </div>
+
+    <!-- Drawer (cargado dinámicamente) -->
+    <div id="drawerContainer"></div>
+
+    <!-- Modal (cargado dinámicamente) -->
+    <div id="modalContainer"></div>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
