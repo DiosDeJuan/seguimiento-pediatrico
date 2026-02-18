@@ -1,0 +1,119 @@
+<!-- ========================================
+     Módulo Formulario - Captura de Datos
+     ======================================== -->
+
+<div class="formulario-container">
+    <h2 class="formulario-titulo">Datos del Paciente</h2>
+    
+    <!-- Sección: Datos del Paciente -->
+    <div class="form-section">
+        <h3 class="section-title">Información Personal</h3>
+        
+        <div class="form-row">
+            <div class="form-group full">
+                <label for="paciente">Nombre del Paciente <span class="required">*</span></label>
+                <input type="text" id="paciente" name="paciente" placeholder="Nombre completo">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="text" id="edad" name="edad" placeholder="Ej: 5 años">
+            </div>
+            
+            <div class="form-group">
+                <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group full">
+                <label for="fechaConsulta">Fecha de Consulta <span class="required">*</span></label>
+                <input type="date" id="fechaConsulta" name="fechaConsulta">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sección: Signos Vitales -->
+    <div class="form-section">
+        <h3 class="section-title">Signos Vitales</h3>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="peso">Peso <span class="required">*</span></label>
+                <input type="number" id="peso" name="peso" step="0.01" placeholder="0.00">
+            </div>
+            
+            <div class="form-group">
+                <label for="unidadPeso">Unidad</label>
+                <select id="unidadPeso" name="unidadPeso">
+                    <option value="kg">kg</option>
+                    <option value="g">g</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="talla">Talla (cm) <span class="required">*</span></label>
+                <input type="number" id="talla" name="talla" step="0.1" placeholder="0.0">
+            </div>
+            
+            <div class="form-group">
+                <label for="temperatura">Temperatura (°C)</label>
+                <input type="number" id="temperatura" name="temperatura" step="0.1" placeholder="36.5">
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="fc">FC (lpm) <span class="required">*</span></label>
+                <input type="number" id="fc" name="fc" placeholder="0">
+            </div>
+            
+            <div class="form-group">
+                <label for="fr">FR (rpm) <span class="required">*</span></label>
+                <input type="number" id="fr" name="fr" placeholder="0">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sección: Diagnóstico -->
+    <div class="form-section">
+        <h3 class="section-title">Diagnóstico</h3>
+        
+        <div class="form-row">
+            <div class="form-group full">
+                <label for="diagnostico">Diagnóstico</label>
+                <textarea id="diagnostico" name="diagnostico" rows="3" placeholder="Diagnóstico clínico..."></textarea>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sección: Medicamentos -->
+    <div class="form-section">
+        <h3 class="section-title">Medicamentos</h3>
+        
+        <div id="medicamentosContainer">
+            <!-- Medicamentos dinámicos -->
+        </div>
+        
+        <button type="button" class="btn-add-medicamento" id="btnAgregarMedicamento">
+            ➕ Agregar Medicamento
+        </button>
+    </div>
+    
+    <!-- Sección: Notas/Plan -->
+    <div class="form-section">
+        <h3 class="section-title">Notas y Plan Clínico</h3>
+        
+        <div class="form-row">
+            <div class="form-group full">
+                <label for="notas">Notas</label>
+                <textarea id="notas" name="notas" rows="5" placeholder="Plan clínico, recomendaciones, observaciones..."></textarea>
+            </div>
+        </div>
+    </div>
+</div>

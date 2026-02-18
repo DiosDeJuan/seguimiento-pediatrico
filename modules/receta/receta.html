@@ -1,0 +1,102 @@
+<!-- ========================================
+     Módulo Receta - Preview WYSIWYG
+     ======================================== -->
+
+<div class="receta-documento" id="recetaDocumento">
+    <!-- Encabezado -->
+    <div class="receta-header">
+        <h1 class="receta-titulo">SEGUIMIENTO PEDIÁTRICO</h1>
+        <div class="header-divider"></div>
+        
+        <div class="header-content">
+            <!-- Datos de la doctora -->
+            <div class="doctora-info">
+                <p class="doctora-nombre">Dra. Janette Cristina Mercado González</p>
+                <p class="doctora-especialidad">Pediatra Neonatóloga</p>
+                <p class="doctora-universidad">U de G – UAEM</p>
+                <p class="doctora-dgp">DGP 4160507</p>
+                <p class="doctora-cedula">Céd. Pediatría 5179317</p>
+                <p class="doctora-cedula">Céd. Neonatología 6204288</p>
+            </div>
+            
+            <!-- Imagen de la doctora -->
+            <div class="doctora-imagen">
+                <img src="assets/pediatra.svg" alt="Dra. Janette Mercado" id="doctoraImg">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Cuerpo del documento -->
+    <div class="receta-body">
+        <!-- Tabla: Datos del Paciente -->
+        <div class="datos-paciente">
+            <table class="tabla-datos">
+                <tr>
+                    <td class="label">Paciente:</td>
+                    <td class="value" id="prevPaciente">-</td>
+                    <td class="label">Edad:</td>
+                    <td class="value" id="prevEdad">-</td>
+                </tr>
+                <tr>
+                    <td class="label">Fecha Nacimiento:</td>
+                    <td class="value" id="prevFechaNacimiento">-</td>
+                    <td class="label">Fecha Consulta:</td>
+                    <td class="value" id="prevFechaConsulta">-</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Tabla: Signos Vitales -->
+        <div class="signos-vitales">
+            <h3 class="seccion-titulo">Signos Vitales</h3>
+            <table class="tabla-datos">
+                <tr>
+                    <td class="label">Peso:</td>
+                    <td class="value" id="prevPeso">-</td>
+                    <td class="label">Talla:</td>
+                    <td class="value" id="prevTalla">-</td>
+                </tr>
+                <tr>
+                    <td class="label">FC:</td>
+                    <td class="value" id="prevFC">-</td>
+                    <td class="label">FR:</td>
+                    <td class="value" id="prevFR">-</td>
+                </tr>
+                <tr>
+                    <td class="label">Temperatura:</td>
+                    <td class="value" id="prevTemperatura">-</td>
+                    <td colspan="2"></td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- Diagnóstico -->
+        <div class="diagnostico-section" id="diagnosticoSection">
+            <h3 class="seccion-titulo">Diagnóstico</h3>
+            <div class="diagnostico-content" id="prevDiagnostico">-</div>
+        </div>
+        
+        <!-- Medicamentos -->
+        <div class="medicamentos-section" id="medicamentosSection">
+            <h3 class="seccion-titulo">Medicamentos</h3>
+            <div class="medicamentos-list" id="prevMedicamentos">
+                <!-- Medicamentos dinámicos -->
+            </div>
+        </div>
+        
+        <!-- Notas -->
+        <div class="notas-section">
+            <h3 class="seccion-titulo">Notas y Plan Clínico</h3>
+            <div class="notas-content" id="prevNotas">-</div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="receta-footer">
+        <p class="footer-direccion">Av. Plan de San Luis # 1753</p>
+        <p class="footer-colonia">Col. Mezquitan Country, 44260 Guadalajara, Jalisco.</p>
+        <p class="footer-cita">Consulta Previa Cita</p>
+        <p class="footer-contacto">TEL 33 3823 8037 | CEL 722 405 39 04</p>
+        <p class="footer-email">doctora.janette@gmail.com</p>
+    </div>
+</div>

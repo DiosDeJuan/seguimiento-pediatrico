@@ -1,0 +1,271 @@
+/* ========================================
+   Módulo Receta - Estilos Documento Médico
+   ======================================== */
+
+.receta-documento {
+    width: 21.59cm; /* Tamaño Carta */
+    min-height: 27.94cm;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    margin: 0 auto;
+    padding: 1.5cm;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.receta-documento.a4 {
+    width: 21cm;
+    min-height: 29.7cm;
+}
+
+/* ========================================
+   Encabezado
+   ======================================== */
+
+.receta-header {
+    margin-bottom: 1.5rem;
+}
+
+.receta-titulo {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.header-divider {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #3498db, #2c3e50, #3498db);
+    margin-bottom: 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+.doctora-info {
+    flex: 1;
+}
+
+.doctora-info p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.doctora-nombre {
+    font-weight: bold;
+    font-size: 1rem !important;
+    color: #2c3e50;
+}
+
+.doctora-especialidad {
+    font-weight: 600;
+    color: #3498db;
+}
+
+.doctora-universidad,
+.doctora-dgp,
+.doctora-cedula {
+    color: #555;
+}
+
+.doctora-imagen {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 2px solid #dee2e6;
+}
+
+.doctora-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ========================================
+   Cuerpo del Documento
+   ======================================== */
+
+.receta-body {
+    margin-bottom: 2rem;
+}
+
+.datos-paciente,
+.signos-vitales,
+.diagnostico-section,
+.medicamentos-section,
+.notas-section {
+    margin-bottom: 1.2rem;
+}
+
+.seccion-titulo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid #3498db;
+}
+
+/* ========================================
+   Tablas
+   ======================================== */
+
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.tabla-datos td {
+    padding: 0.4rem 0.5rem;
+    border: 1px solid #dee2e6;
+}
+
+.tabla-datos .label {
+    font-weight: 600;
+    background-color: #f8f9fa;
+    width: 30%;
+    color: #495057;
+}
+
+.tabla-datos .value {
+    background-color: white;
+    color: #212529;
+}
+
+/* ========================================
+   Secciones de Contenido
+   ======================================== */
+
+.diagnostico-content,
+.notas-content {
+    padding: 0.8rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    min-height: 3rem;
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.notas-content {
+    min-height: 5rem;
+}
+
+/* ========================================
+   Medicamentos
+   ======================================== */
+
+.medicamentos-list {
+    padding: 0.5rem 0;
+}
+
+.medicamento-prev-item {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    border-radius: 3px;
+}
+
+.medicamento-prev-item:last-child {
+    margin-bottom: 0;
+}
+
+.med-prev-nombre {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 0.3rem;
+}
+
+.med-prev-detalle {
+    font-size: 0.9rem;
+    color: #495057;
+    margin: 0.2rem 0;
+}
+
+.med-prev-nota {
+    font-size: 0.85rem;
+    color: #6c757d;
+    font-style: italic;
+    margin-top: 0.3rem;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+
+.receta-footer {
+    position: absolute;
+    bottom: 1cm;
+    left: 1.5cm;
+    right: 1.5cm;
+    text-align: center;
+    padding-top: 0.8rem;
+    border-top: 2px solid #3498db;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #495057;
+}
+
+.receta-footer p {
+    margin: 0.15rem 0;
+}
+
+.footer-direccion {
+    font-weight: 600;
+}
+
+.footer-contacto {
+    font-weight: 600;
+    color: #3498db;
+}
+
+.footer-email {
+    color: #3498db;
+}
+
+/* ========================================
+   Ocultar secciones vacías
+   ======================================== */
+
+.medicamentos-section.hidden {
+    display: none;
+}
+
+/* ========================================
+   Impresión / PDF
+   ======================================== */
+
+@media print {
+    .receta-documento {
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .receta-footer {
+        position: fixed;
+        bottom: 0;
+    }
+}

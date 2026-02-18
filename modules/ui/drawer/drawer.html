@@ -1,0 +1,77 @@
+<!-- ========================================
+     Módulo Drawer - Panel Opciones
+     ======================================== -->
+
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<div class="drawer-panel" id="drawerPanel">
+    <div class="drawer-header">
+        <h2>⚙️ Opciones</h2>
+        <button class="drawer-close" id="drawerClose">✕</button>
+    </div>
+    
+    <div class="drawer-content">
+        <!-- Nombre del PDF -->
+        <div class="drawer-section">
+            <label for="pdfNombre" class="drawer-label">Nombre del PDF</label>
+            <input type="text" id="pdfNombre" class="drawer-input" placeholder="seguimiento_pediatrico" value="seguimiento_pediatrico">
+        </div>
+        
+        <!-- Gestión de Borradores -->
+        <div class="drawer-section">
+            <h3 class="drawer-subtitle">Borradores</h3>
+            
+            <div class="drawer-row">
+                <select id="selectBorrador" class="drawer-select">
+                    <option value="">Seleccionar borrador...</option>
+                </select>
+            </div>
+            
+            <div class="drawer-buttons">
+                <button id="btnCargarBorrador" class="btn-drawer-action btn-primary">
+                    📂 Cargar
+                </button>
+                <button id="btnEliminarBorrador" class="btn-drawer-action btn-danger">
+                    🗑️ Eliminar
+                </button>
+            </div>
+            
+            <button id="btnGuardarBorrador" class="btn-drawer-action btn-success full-width">
+                💾 Guardar Borrador
+            </button>
+        </div>
+        
+        <!-- Tamaño de Página -->
+        <div class="drawer-section">
+            <h3 class="drawer-subtitle">Tamaño de Página</h3>
+            
+            <div class="drawer-radio-group">
+                <label class="radio-label">
+                    <input type="radio" name="paperSize" value="carta" checked>
+                    <span>Carta (215.9 x 279.4 mm)</span>
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="paperSize" value="a4">
+                    <span>A4 (210 x 297 mm)</span>
+                </label>
+            </div>
+        </div>
+        
+        <!-- Exportar PDF -->
+        <div class="drawer-section">
+            <button id="btnExportarPDF" class="btn-drawer-action btn-success full-width large">
+                📄 Exportar a PDF
+            </button>
+        </div>
+        
+        <!-- Información de ayuda -->
+        <div class="drawer-section drawer-info">
+            <h3 class="drawer-subtitle">ℹ️ Ayuda</h3>
+            <ul class="info-list">
+                <li><strong>Campos requeridos:</strong> Paciente, Fecha Consulta, Peso, Talla, FC, FR</li>
+                <li><strong>Borradores:</strong> Se guardan automáticamente en tu navegador</li>
+                <li><strong>PDF:</strong> Exporta exactamente lo que ves en el preview</li>
+            </ul>
+        </div>
+    </div>
+</div>
